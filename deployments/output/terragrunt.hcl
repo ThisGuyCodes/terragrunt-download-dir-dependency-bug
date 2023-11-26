@@ -11,3 +11,4 @@ terraform {
 inputs = {
   input = "outputs"
 }
+download_dir = "${get_repo_root()}/.terragrunt-cache/${path_relative_to_include()}"
